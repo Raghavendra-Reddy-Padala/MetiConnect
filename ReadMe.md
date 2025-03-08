@@ -1,4 +1,3 @@
-(Due to technical issues, the search service is temporarily unavailable.)
 # MetiConnect 🚀
 
 **Mentor-Student Connecting Platform**
