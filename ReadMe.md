@@ -62,24 +62,7 @@ MetiConnect is a web application designed to bridge the gap between mentors and 
 
 ---
 
-## Screenshots 📸
 
-![Home Page](https://via.placeholder.com/800x400.png?text=Home+Page)  
-*Home Page - Where mentors and students connect.*
-
-![Communities](https://via.placeholder.com/800x400.png?text=Communities)  
-*Communities - Join or create communities to expand your network.*
-
-![Chat Interface](https://via.placeholder.com/800x400.png?text=Chat+Interface)  
-*Real-Time Chat - Communicate instantly with your mentor or student.*
-
-![Profile Page](https://via.placeholder.com/800x400.png?text=Profile+Page)  
-*Profile Page - Showcase your skills and expertise.*
-
-![Events](https://via.placeholder.com/800x400.png?text=Events)  
-*Events - Participate in webinars, workshops, and more.*
-
----
 
 ## Installation 🛠️
 
