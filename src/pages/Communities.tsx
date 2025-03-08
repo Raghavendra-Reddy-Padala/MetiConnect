@@ -1,8 +1,29 @@
-import React from 'react';
-import { Users, MessageSquare, Calendar, ArrowRight } from 'lucide-react';
+import {  MessageSquare, Calendar, ArrowRight } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+
 import { communities } from '../data/mockData';
+import { useState } from 'react';
 
 const Communities = () => {
+  const navigate = useNavigate();
+  const [joinedCommunities, setJoinedCommunities] = useState<number[]>([]);
+
+  const handleJoinCommunity = (communityId: number, event: { preventDefault: () => void; }) => {
+    event.preventDefault();
+    
+    // Add to joined communities if not already joined
+    if (!joinedCommunities.includes(communityId)) {
+      setJoinedCommunities([...joinedCommunities, communityId]);
+      
+      // Show brief confirmation (optional)
+      const community = communities.find(c => Number(c.id) === communityId);
+      const communityName = community ? community.name : 'Unknown Community';
+      alert(`You've successfully joined ${communityName}!`);
+    }
+    
+    // Navigate to the community detail page
+    navigate(`/community/${communityId}`);
+  };
   return (
     <div className="max-w-7xl mx-auto">
       <div className="mb-8">
@@ -44,10 +65,18 @@ const Communities = () => {
                   <span>{community.weeklyMeetups ? 'Weekly meetups' : 'Monthly meetups'}</span>
                 </div>
               </div>
-              <button className="w-full flex items-center justify-center gap-2 px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-700 transition-colors">
-                Join Community
+              <a
+                href={`/community/${community.id}`}
+                onClick={(e) => handleJoinCommunity(Number(community.id), e)}
+                className={`w-full flex items-center justify-center gap-2 px-4 py-2 ${
+                  joinedCommunities.includes(Number(community.id))
+                    ? 'bg-green-600 hover:bg-green-700'
+                    : 'bg-indigo-600 hover:bg-indigo-700'
+                } text-white rounded-lg transition-colors`}
+              >
+                {joinedCommunities.includes(Number(community.id)) ? 'Go to Community' : 'Join Community'}
                 <ArrowRight className="h-4 w-4" />
-              </button>
+              </a>
             </div>
           </div>
         ))}

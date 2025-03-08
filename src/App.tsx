@@ -9,6 +9,7 @@ import MentorDashboard from './pages/MentorDashboard';
 import SignIn from './pages/SignIn';
 import SignUp from './pages/SignUp';
 import Communities from './pages/Communities';
+import FAQPage from './pages/faqpage';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
             <Route path="/mentor-dashboard" element={<MentorDashboard />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path='/faq' element={<FAQPage/>}/>
             <Route path="/communities" element={<Communities />} />
           </Routes>
         </main>

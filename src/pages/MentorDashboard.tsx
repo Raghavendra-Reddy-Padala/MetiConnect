@@ -56,7 +56,7 @@ const MentorDashboard = () => {
                 </div>
                 <div>
                   <p className="text-sm text-gray-600">Earnings</p>
-                  <p className="text-2xl font-bold">$3.2k</p>
+                  <p className="text-2xl font-bold">₹3.2k</p>
                 </div>
               </div>
             </div>

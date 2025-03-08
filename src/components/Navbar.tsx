@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Sparkles, Search, Calendar, User, Users } from 'lucide-react';
+import { Sparkles, Search, Calendar, User, Users, HelpCircle } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -21,10 +21,14 @@ const Navbar = () => {
               <Users className="h-5 w-5" />
               <span>Communities</span>
             </Link>
-            <Link to="/dashboard" className="flex items-center space-x-1 text-gray-600 hover:text-indigo-600">
-              <Calendar className="h-5 w-5" />
-              <span>My Sessions</span>
+            <Link to="/faq" className="flex items-center space-x-1 text-gray-600 hover:text-indigo-600">
+              <HelpCircle className="h-5 w-5" />
+              <span>FAQ</span>
             </Link>
+            {/* <Link to="/dashboard" className="flex items-center space-x-1 text-gray-600 hover:text-indigo-600">
+              <Calendar className="h-5 w-5" />
+              <span></span>9669
+            </Link> */}
             <Link to="/signin" className="flex items-center space-x-1 bg-indigo-600 text-white px-4 py-2 rounded-lg hover:bg-indigo-700">
               <User className="h-5 w-5" />
               <span>Sign In</span>

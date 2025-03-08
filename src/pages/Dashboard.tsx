@@ -1,6 +1,5 @@
-import React from 'react';
 import { Calendar, Clock, Video, MessageCircle, BookOpen, Trophy, TrendingUp } from 'lucide-react';
-import { upcomingSessions } from '../data/mockData';
+import { mentors, upcomingSessions } from '../data/mockData';
 import { format } from 'date-fns';
 
 const Dashboard = () => {
