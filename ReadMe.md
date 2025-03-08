@@ -119,18 +119,7 @@ We welcome contributions! If you'd like to contribute to MetiConnect, please fol
 
 ---
 
-## License 📄
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Acknowledgments 🙏
-
-- Thanks to the React and Node.js communities for their amazing tools and libraries.
-- Special thanks to all contributors and users of MetiConnect.
-
----
 
 ## Contact 📧
 
@@ -142,6 +131,6 @@ For any questions or feedback, feel free to reach out:
 
 ---
 
-Made with ❤️ by Raghavendra Reddy Padala. Happy connecting! 🌟
+Made with ❤️ by Team Kaizen. Happy connecting! 🌟
 
 ---
